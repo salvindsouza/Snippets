@@ -1,0 +1,2 @@
+#Group by column and get corresponding row values 
+df.loc[df.groupby(['col1','col2'])['col3'].nlargest(3).index.get_level_values(2)]
